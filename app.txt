@@ -1,0 +1,41 @@
+from pathlib import Path
+import zipfile
+
+root = Path("/mnt/data/git_practical_lab")
+root.mkdir(exist_ok=True)
+
+files = {
+"README.md": """# Git Practical Learning Lab
+
+This lab teaches these commands through a small real-world workflow:
+
+- git status
+- git branch
+- git checkout -b
+- git switch
+- git add
+- git commit
+- git push
+- git fetch
+- git pull
+- git merge
+- git stash
+- git stash pop
+
+It also includes a hands-on merge conflict exercise.
+
+## Prerequisites
+
+- Git installed
+- Git Bash or PowerShell
+- A GitHub/GitLab/Bitbucket account is optional for the remote section
+
+## 0. Create the lab
+
+Open PowerShell:
+
+```powershell
+mkdir git-practical-lab
+cd git-practical-lab
+git init
+git branch -M main
